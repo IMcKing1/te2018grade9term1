@@ -26,16 +26,18 @@ else{
 // that's bad luck. Write code that prints if someone should bring an umbrella
 // with them.
 console.log("*** Problem 2: Umbrella ***");
-let raining = true;
-let thunderstorming = true;
+let raining = READLINE.question("Is it raining?");
+let thunderstorming = READLINE.question("Is it thunderstorming?");
 
-if (raining == false || thunderstorming == true){
+if (raining == "yes" && thunderstorming == "yes"){
 	console.log("Do not bring umbrella")
 	   }
 else{
 	   	console.log("Bring umbrella")
    }
-
+else{
+	console.log("Don't bring umbrella")
+}
 // **** Problem 3: Monkey Trouble ****
 // There are two monkeys: Bubbles and Spankey. You are in trouble if both of
 // them are smiling, or if neither are smiling. Write code that prints if we
@@ -46,7 +48,7 @@ let spankey = false;
 
 if ((bubbles == false && spankey == false) || (bubbles == true && spankey == true)){
 	
-		console.log("You're in trouble!")
+		console.log(" Neither or both are smiling. You're in trouble!")
 	
 	}
 else{
@@ -65,7 +67,9 @@ let score3 = 89;
 
 
 if (score1 == score2 || score1 == score3 || score2 == score3){
+	console.log("Scores: 100, 100, 89")
 	console.log("Tie between two scores!")
+	console.log("Top Score:")
 	console.log(score1)
 }else{
 
